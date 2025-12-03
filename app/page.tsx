@@ -1,15 +1,12 @@
-import React from 'react'
-import SimpleMapPicker from './components/map'
+import React from "react";
+import SimpleMapPicker from "./components/map";
 
 const page = () => {
   return (
     <div>
-      <SimpleMapPicker
-       
-     
-      />
+      <SimpleMapPicker />
     </div>
   );
-}
+};
 
-export default page
+export default page;
