@@ -1,13 +1,63 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #5a189a;
+  --color-primary-hover: #3c0e63;
+  --color-secondary: #e0aaff;
+  --color-secondary-hover: #906ab6;
+  
+  --font-family-poppins: var(--font-poppins), sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #171717;
+  font-family: var(--font-poppins), sans-serif !important;
 }
 
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans);
+/* Custom Scrollbar Styling - More Specific *
+  scrollbar-width: thin;
+  scrollbar-color: #5a189a #f1f1f1;
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #5a189a;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #3c0e63;
+}
+
+/* Specifically target body and html scrollbars */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #5a189a;
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: #3c0e63;
 }

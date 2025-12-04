@@ -18,7 +18,7 @@ export default function DashboardPage() {
         ))}
       </div>
 
-      <div className="bg-white p-6 rounded-lg shadow">
+      <div className="bg-white h-100 p-6 rounded-lg shadow">
         <h3 className="text-lg font-semibold mb-4">Recent Activity</h3>
         <p className="text-gray-600">Your dashboard content goes here...</p>
       </div>
