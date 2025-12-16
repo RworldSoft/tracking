@@ -1,4 +1,4 @@
-import SimpleMapPicker from "@/app/components/map";
+import SimpleMapPicker from "@/components/map";
 
 export default function AnalyticsPage() {
   return (

@@ -1,30 +1,13 @@
 "use client";
-import React from "react";
-import {
-  Search,
-  Plus,
-  Import,
-  Settings,
-  ChevronLeft,
-  ChevronRight,
-  Edit,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, Edit, FileText, Sheet } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectTrigger,
-  SelectValue,
-  SelectContent,
-  SelectItem,
-} from "@/components/ui/select";
-import ItemsHeader from "./components/header";
+import Header from "./components/header";
 import Filter from "./components/filter";
 
-export default function ItemsComponent() {
+export default function ManageStore() {
   return (
     <div className="w-full">
-      <ItemsHeader title="Items Name" />
+      <Header title="Manage Store" />
 
       {/* Filters Row */}
       <Filter />
@@ -33,27 +16,26 @@ export default function ItemsComponent() {
         <table className="w-full border-collapse">
           <thead className="bg-gray-100">
             <tr className="text-left text-sm text-gray-600">
-              <th className="p-3 border">Item Code</th>
-              <th className="p-3 border">Item Name</th>
-              <th className="p-3 border">Stock</th>
-              <th className="p-3 border">Selling Price</th>
-              <th className="p-3 border">Purchase Price</th>
+              <th className="p-3 border">Name</th>
+              <th className="p-3 border">Address</th>
+              <th className="p-3 border">Status</th>
+              <th className="p-3 border">Primary</th>
               <th className="p-3 border text-center">Actions</th>
             </tr>
           </thead>
 
           <tbody>
             <tr className="text-sm">
-              <td className="p-3 border">76543</td>
               <td className="p-3 border text-blue-600 cursor-pointer">apple</td>
               <td className="p-3 border">888 Box</td>
               <td className="p-3 border">₹ 20</td>
               <td className="p-3 border">₹ 98</td>
               <td className="p-3 border flex items-center justify-center gap-4">
                 <Button variant="outline" size="icon" className="h-8 w-8">
-                  +/-
+                   <FileText />
                 </Button>
                 <Button variant="outline" size="icon" className="h-8 w-8">
+                
                   <Edit />
                 </Button>
               </td>
