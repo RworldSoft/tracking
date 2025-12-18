@@ -52,7 +52,7 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
   };
 
   const navItems: NavItem[] = [
-    { icon: BarChart3, label: "Dashboard", href: "/dashboard" },
+    { icon: BarChart3, label: "Dashboard", href: "/" },
     { icon: Navigation, label: "Live Location", href: "/live-location" },
     {
       icon: Package,
@@ -81,7 +81,6 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
       label: "Purchase",
       href: "/purchase",
       hasDropdown: true,
-      
     },
     { icon: Truck, label: "Van Sale", href: "/van-sale" },
     {
